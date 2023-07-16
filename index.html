@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <h1 id="monitor"></h1>
+            <h2 id="monitorAndResult"></h2>
+        </div>
+        <div class="display_keypad">
+            <table>
+                <tr>
+                    <td><button id="buttons_fav" onClick="clearResult()">C</button></td>
+                    <td><button id="buttons_fav" onClick="addOfdisplay('+')">+</button></td>
+                    <td><button id="buttons_fav" onClick="addOfdisplay('-')">-</button></td>
+                    <td><button id="buttons_fav" onClick="addOfdisplay('/')">÷</button></td>
+                </tr
+                <tr>
+                    <td><button onClick="addOfdisplay('7')">7</button></td>
+                    <td><button onClick="addOfdisplay('8')">8</button></td>
+                    <td><button onClick="addOfdisplay('9')">9</button></td>
+                    <td><button id="buttons_fav" onClick="addOfdisplay('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onClick="addOfdisplay('4')">4</button></td>
+                    <td><button onClick="addOfdisplay('5')">5</button></td>
+                    <td><button onClick="addOfdisplay('6')">6</button></td>
+                    <td><button id="buttons_fav" onClick="addOfdisplay('%')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button onClick="addOfdisplay('1')">1</button></td>
+                    <td><button onClick="addOfdisplay('2')">2</button></td>
+                    <td><button onClick="addOfdisplay('3')">3</button></td>
+                    <td rowspan="2"><button id="buttons_fav_mod" onClick="calculateResult()">=</button></td>
+                </tr>
+                <tr>
+                    <td><button onClick="clearnumber()"><</button></td>
+                    <td><button onClick="addOfdisplay('0')">0</button></td>
+                    <td><button onClick="addOfdisplay('.')">.</button></td>
+                </tr>
+            </table>            
+        </div>
+    </div>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

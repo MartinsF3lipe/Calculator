@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(320deg, #323039, #323232);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;    
+    background-color: #292929;
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 4px 0px 15px black;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+        width: 0px;
+        height: 0px;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        width: 300px;
+        height: 450px;
+    }
+}
+
+.input {
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+    background-color: #2e2f5cf7;
+    text-align: right;
+    color: white;
+    border-radius: 15px;    
+    font-size: 15px;
+}
+
+.input h2 {
+    opacity: 0.5;
+}
+
+.display_keypad {
+    margin-top: 35px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+td {
+    width: 100px;
+    height: 60px;
+    padding: 3px;
+    text-align: center;
+    
+}
+
+.display_keypad button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 20%;
+    background-color: #283050;
+}
+
+#buttons_fav {
+    background-color: #748ae8;
+}
+
+#buttons_fav_mod {
+    background-color: #e86161;
+}
