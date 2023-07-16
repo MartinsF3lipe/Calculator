@@ -1,14 +1,10 @@
 const monitor = document.getElementById("monitor");
 const monitorAndResult = document.getElementById("monitorAndResult");
 
-
-var sound = new Audio ("assets/sounds/click.mp3")
 var result = ""
 
 function clearnumber() {
 
-    playsound();
-    
     var monitorValue = monitor.innerText;
     
     if (monitorValue.length > 0) {
@@ -21,7 +17,6 @@ function clearnumber() {
 
 
 function clearResult() {
-    playsound();
     monitor.innerText = "";
     monitorAndResult.innerText = "";
     
@@ -29,15 +24,12 @@ function clearResult() {
 
 
 function addOfdisplay(id) {
-    playsound();
     monitor.innerText += id;
     monitorResult();
-    playsound();
 }
 
 
 function calculateResult() {
-    playsound();
     result = eval(monitor.innerText);
     monitor.innerText = result;
     monitorAndResult.innerText = "";
@@ -53,8 +45,4 @@ function monitorResult() {
     catch {
         monitorAndResult.innerText = monitor.innerText;
     }
-}
-
-function playsound() {
-    sound.play();
 }
